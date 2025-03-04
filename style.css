@@ -54,7 +54,7 @@ body {
 }
 
 .dash > img {
-  width: 40px;
+  width: 40px !important;
 }
 
 .sidebar ul {
@@ -173,7 +173,7 @@ main {
   grid-template-columns: 3fr 1fr;
   gap: 10px;
   background-color: #e2e8f0;
-  padding: 15px;
+  padding: 8px;
 }
 
 .projects {
@@ -232,8 +232,33 @@ main {
 .annc :nth-child(2) div:not(div:nth-child(3)) {
   border-bottom: 2px rgb(0, 0, 0, 0.2) solid;
 }
+
 .trends {
   display: grid;
   grid-template-rows: min-content 1fr;
   gap: 10px;
+}
+
+.trends > div:nth-child(2) {
+  background-color: white;
+  padding: 10px;
+}
+
+.trends-users {
+  display: grid;
+  gap: 10px;
+}
+
+.trends-users > div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: min-content;
+  gap: 10px;
+}
+
+.trends-users > div p:nth-child(2) {
+  color: grey;
+}
+.trends img {
+  width: 40px;
 }
